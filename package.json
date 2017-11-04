@@ -1,0 +1,33 @@
+{
+  "name": "redux-saga-app",
+  "version": "1.0.0",
+  "description": "Create test project using redux-saga",
+  "main": "main.js",
+  "scripts": {
+    "start": "webpack-dev-server --progress --color"
+  },
+  "author": "Sergey Avanesyan",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-saga": "^0.16.0",
+    "redux-thunk": "^2.2.0",
+    "redux-ui": "^0.1.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-logger": "^3.0.6",
+    "webpack": "^3.8.1"
+  }
+}

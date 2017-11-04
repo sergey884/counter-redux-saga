@@ -1,0 +1,1 @@
+# Simple async counter using redux-saga.
