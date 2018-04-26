@@ -1,0 +1,15 @@
+{
+    "parser": "babel-eslint",
+    "extends": [
+        "./node_modules/eslint-config-airbnb/index.js"
+    ],
+    "plugins": [
+        "babel",
+        "react"
+    ],
+    "rules": {
+        "linebreak-style": 0,
+        "react/prefer-stateless-function": 0,
+        "react/forbid-prop-types": 1
+    }
+}

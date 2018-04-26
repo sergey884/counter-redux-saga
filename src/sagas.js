@@ -2,26 +2,26 @@ import { delay } from 'redux-saga';
 import { put, takeEvery, all } from 'redux-saga/effects';
 
 export function* incrementAsync() {
-  yield delay(1000)
-  yield put({ type: 'INCREMENT' })
+  yield delay(1000);
+  yield put({ type: 'INCREMENT' });
 }
 
 export function* decrementAsync() {
-	yield delay( 2000 )
-	yield put( { type: 'DECREMENT' } )
+  yield delay(2000);
+  yield put({ type: 'DECREMENT' });
 }
 
 export function* watchIncrementAsync() {
-  yield takeEvery('INCREMENT_ASYNC', incrementAsync)
+  yield takeEvery('INCREMENT_ASYNC', incrementAsync);
 }
 
 export function* watchDecrementAsync() {
-	yield takeEvery('DECREMENT_ASYNC', decrementAsync);
+  yield takeEvery('DECREMENT_ASYNC', decrementAsync);
 }
 
 export default function* rootSaga() {
-	yield all([
-		watchIncrementAsync(),
-		watchDecrementAsync()
-	]);
+  yield all([
+    watchIncrementAsync(),
+    watchDecrementAsync()
+  ]);
 }

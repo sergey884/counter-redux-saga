@@ -1,17 +1,17 @@
 import * as types from './types';
 
 export const increment = () => ({
-	type: types.INCREMENT
-})
+  type: types.INCREMENT,
+});
 
 export const decrement = () => ({
-	type: types.DECREMENT
-})
+  type: types.DECREMENT,
+});
 
 export const asyncIncrement = () => ({
-	type: types.INCREMENT_ASYNC
-})
+  type: types.INCREMENT_ASYNC,
+});
 
 export const asyncDecrement = () => ({
-	type: types.DECREMENT_ASYNC
-})
+  type: types.DECREMENT_ASYNC,
+});
